@@ -1,0 +1,21 @@
+<?php
+abstract class Veiculo {
+    public $modelo;
+    public $ano;
+
+    abstract public function mover()
+}
+
+class Carro extends Veiculo {
+    public function mover() {
+        echo "O carro está se movendo.";
+    }
+}
+
+class Moto extends Veiculo {
+    public function mover() {
+        echo "A moto está se movendo.";
+    }
+}
+
+?>
